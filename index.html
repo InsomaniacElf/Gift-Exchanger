@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Exchanger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Gift Exchanger! ✨</h1>
+        
+        <!-- Gift Assigner Section -->
+        <div class="section">
+            <h2>🎁 Gift Assigner</h2>
+            <p>Hey bestie!!! Enter your lovely name:</p>
+            <input type="text" id="nameInput" placeholder="Your name here...">
+            <button onclick="assignGifts()">Get Your Gifts!</button>
+            <div id="assignerOutput" class="output"></div>
+        </div>
+
+        <!-- Gift List Adder Section -->
+        <div class="section">
+            <h2>🎀 Add Gifts to the List</h2>
+            <p>Enter a gift name (or comma-separated gifts, or 'QUIT' to clear):</p>
+            <input type="text" id="giftInput" placeholder="E.g., Claw clip, Scrunchies ">
+            <button onclick="addGifts()">Add Gifts!</button>
+            <div id="adderOutput" class="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
