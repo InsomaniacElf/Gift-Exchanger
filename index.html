@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Exchanger</title>
+    <title>Cute Gift Exchanger</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>✨ Gift Exchanger! ✨</h1>
+        <h1>✨ Cute Gift Exchanger! ✨</h1>
         
         <!-- Gift Assigner Section -->
         <div class="section">
@@ -24,7 +28,7 @@
         <div class="section">
             <h2>🎀 Add Gifts to the List</h2>
             <p>Enter a gift name (or comma-separated gifts, or 'QUIT' to clear):</p>
-            <input type="text" id="giftInput" placeholder="E.g., Claw clip, Scrunchies ">
+            <input type="text" id="giftInput" placeholder="E.g., Claw clip, Scrunchie">
             <button onclick="addGifts()">Add Gifts!</button>
             <div id="adderOutput" class="output"></div>
         </div>
